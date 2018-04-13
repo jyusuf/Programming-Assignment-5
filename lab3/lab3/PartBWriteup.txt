@@ -1,0 +1,8 @@
+PartB writeup:
+
+In your writeup, discuss weak scalability and efficiency in your implementation and any other
+performance trends you see.
+
+-Gathering and merging recursively using MPI_COMM_SPLIT (which sends half of the remaining processes send their data to the other half and no longer do any
+more work) allowed the program to run efficiently with much better time thent he sequential version. In terms of weak scalability, this program's time efficiency increased exponentially with time as the number of processors increased from 1 to 2 to 4 to 8.
+
